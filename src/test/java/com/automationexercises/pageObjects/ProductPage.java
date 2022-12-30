@@ -91,9 +91,27 @@ public class ProductPage{
 	@CacheLookup
 	WebElement loginBtn;
 	
+	@FindBy(css="button.btn:nth-child(1)")
+	@CacheLookup
+	WebElement continueCart;
 	
 	
 	
+	@FindBy(css=".signup-form > form:nth-child(2) > input:nth-child(2)")
+	@CacheLookup
+	WebElement usernameInput;
+	
+	
+
+	@FindBy(css=".signup-form > form:nth-child(2) > input:nth-child(3)")
+	@CacheLookup
+	WebElement emailInput;
+	
+	
+	
+	@FindBy(css="button.btn:nth-child(5)")
+	@CacheLookup
+	WebElement signSubmitBtn;
 	
 	//Actions on element
 	public void clickProduct() {
@@ -158,8 +176,16 @@ public class ProductPage{
 		viewCartLink.click();
 		proceedCheckoutBtn.click();
 		checkoutModal.click();
-		loginBtn.click();
+		continueCart.click();
+	
 		
+	}
+	
+	public void sign() {
+		loginBtn.click();
+		usernameInput.sendKeys("Ankit");
+		emailInput.sendKeys("abj@gmail.com");
+		signSubmitBtn.click();
 	}
 	
 	

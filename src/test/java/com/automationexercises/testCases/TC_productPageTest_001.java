@@ -21,7 +21,7 @@ public class TC_productPageTest_001 extends TC_homePageTest_001 {
 		 pg.viewProduct();
 		 pg.handleCartModal();
 		 pg.cart();
-
+		 pg.sign();
 
 }
 }
