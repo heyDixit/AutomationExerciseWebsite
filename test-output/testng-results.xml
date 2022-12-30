@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-30T19:31:47 IST" name="Default suite" finished-at="2022-12-30T19:32:24 IST" duration-ms="37400">
+    <groups>
+    </groups>
+    <test started-at="2022-12-30T19:31:47 IST" name="Default test" finished-at="2022-12-30T19:32:24 IST" duration-ms="37400">
+      <class name="com.automationexercises.testCases.TC_productPageTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:31:47 IST" name="setup" finished-at="2022-12-30T19:31:53 IST" duration-ms="6040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTest()[pri:1, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:31:53 IST" name="homePageTest" finished-at="2022-12-30T19:32:06 IST" duration-ms="13568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:32:06 IST" name="tearDown" finished-at="2022-12-30T19:32:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="productPageTest()[pri:2, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:32:06 IST" name="productPageTest" finished-at="2022-12-30T19:32:24 IST" duration-ms="17759" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/login">...</a> is not clickable at point (1029, 40). Other element would receive the click: <div id="checkoutModal" class="modal show">...</div>
+  (Session info: chrome=108.0.5359.124)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LTIN-APLR1XFYF7604', ip: 'fe80:0:0:0:c69:74bf:a84b:7306%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65ab68bd623f231aa36cb6cfe193fa30, clickElement {id=f3d16772-3a16-451f-847f-165a0ee2f1e3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/2b/v2dcyxc96xd...}, goog:chromeOptions: {debuggerAddress: localhost:59938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59938/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (65ab68bd623f231aa36cb6cfe193fa30)] -> xpath: //a[@href='/login']]
+Session ID: 65ab68bd623f231aa36cb6cfe193fa30]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/login">...</a> is not clickable at point (1029, 40). Other element would receive the click: <div id="checkoutModal" class="modal show">...</div>
+  (Session info: chrome=108.0.5359.124)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LTIN-APLR1XFYF7604', ip: 'fe80:0:0:0:c69:74bf:a84b:7306%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65ab68bd623f231aa36cb6cfe193fa30, clickElement {id=f3d16772-3a16-451f-847f-165a0ee2f1e3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/2b/v2dcyxc96xd...}, goog:chromeOptions: {debuggerAddress: localhost:59938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59938/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (65ab68bd623f231aa36cb6cfe193fa30)] -> xpath: //a[@href='/login']]
+Session ID: 65ab68bd623f231aa36cb6cfe193fa30
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.automationexercises.pageObjects.ProductPage.cart(ProductPage.java:161)
+at com.automationexercises.testCases.TC_productPageTest_001.productPageTest(TC_productPageTest_001.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:32:24 IST" name="tearDown" finished-at="2022-12-30T19:32:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T19:32:24 IST" name="tearDown" finished-at="2022-12-30T19:32:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercises.testCases.TC_productPageTest_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
