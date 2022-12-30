@@ -1,37 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Contact Us Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Feedback Submit]]>
+    </line>
+    <line>
+      <![CDATA[Verify Success Message]]>
+    </line>
+    <line>
+      <![CDATA[Home on nav clicked]]>
+    </line>
+    <line>
+      <![CDATA[Homepage Verified]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-30T20:47:02 IST" name="Default suite" finished-at="2022-12-30T20:48:01 IST" duration-ms="59170">
+  <suite started-at="2022-12-30T21:14:38 IST" name="Default suite" finished-at="2022-12-30T21:15:04 IST" duration-ms="26343">
     <groups>
     </groups>
-    <test started-at="2022-12-30T20:47:02 IST" name="Default test" finished-at="2022-12-30T20:48:01 IST" duration-ms="59170">
-      <class name="com.automationexercises.testCases.TC_productPageTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:47:02 IST" name="setup" finished-at="2022-12-30T20:47:08 IST" duration-ms="5974" status="PASS">
+    <test started-at="2022-12-30T21:14:38 IST" name="Default test" finished-at="2022-12-30T21:15:04 IST" duration-ms="26343">
+      <class name="com.automationexercises.testCases.TC_contactUsTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:14:38 IST" name="setup" finished-at="2022-12-30T21:14:44 IST" duration-ms="6087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageTest()[pri:1, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:47:08 IST" name="homePageTest" finished-at="2022-12-30T20:47:24 IST" duration-ms="15997" status="PASS">
+        <test-method signature="homePageTest()[pri:1, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:14:44 IST" name="homePageTest" finished-at="2022-12-30T21:14:56 IST" duration-ms="12032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:47:24 IST" name="tearDown" finished-at="2022-12-30T20:47:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:14:56 IST" name="tearDown" finished-at="2022-12-30T21:14:56 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="productPageTest()[pri:2, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:47:24 IST" name="productPageTest" finished-at="2022-12-30T20:48:01 IST" duration-ms="37186" status="PASS">
+        <test-method signature="contactUsTest()[pri:2, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:14:56 IST" name="contactUsTest" finished-at="2022-12-30T21:15:04 IST" duration-ms="8209" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Contact Us Clicked]]>
+            </line>
+            <line>
+              <![CDATA[Feedback Submit]]>
+            </line>
+            <line>
+              <![CDATA[Verify Success Message]]>
+            </line>
+            <line>
+              <![CDATA[Home on nav clicked]]>
+            </line>
+            <line>
+              <![CDATA[Homepage Verified]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- productPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:48:01 IST" name="tearDown" finished-at="2022-12-30T20:48:01 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- contactUsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:15:04 IST" name="tearDown" finished-at="2022-12-30T21:15:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_productPageTest_001@3ee37e5a]" started-at="2022-12-30T20:48:01 IST" name="tearDown" finished-at="2022-12-30T20:48:01 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercises.testCases.TC_contactUsTest_001@3ee37e5a]" started-at="2022-12-30T21:15:04 IST" name="tearDown" finished-at="2022-12-30T21:15:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.automationexercises.testCases.TC_productPageTest_001 -->
+      </class> <!-- com.automationexercises.testCases.TC_contactUsTest_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

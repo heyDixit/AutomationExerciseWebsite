@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 
 public class ContactUs {
@@ -65,6 +66,7 @@ public class ContactUs {
 	public void clickContactUs() {
 		try {
 			contactUs.click();
+			Reporter.log("Contact Us Clicked");
 		}
 		catch(Exception e) {
 			System.out.println("Exception Caught"+ e.getMessage());
@@ -93,6 +95,7 @@ public class ContactUs {
 	
 	public void clickSubmit() {
 		submitBtn.click();
+		Reporter.log("Feedback Submit");
 	}
 	
 	
@@ -100,6 +103,7 @@ public class ContactUs {
 		
 		 Alert alert = ldriver.switchTo().alert();  //We need to switch from the website to the alert box
 	     alert.accept();
+	     Reporter.log("Alert on contact us page accepted");
 	}
 
 	public String getFormHeadingText() {
@@ -109,14 +113,18 @@ public class ContactUs {
 
 	public String getSuccessMsg() {
 		// TODO Auto-generated method stub
+		Reporter.log("Verify Success Message");
 		return successMsg.getText();
 	}
 	
 	public void clickHome() {
 		homeNavBtn.click();
+		Reporter.log("Home on nav clicked");
 	}
 	
 	public String verifyHomePage() {
+			Reporter.log("Homepage Verified");
 		 return ldriver.getTitle();
+		 
 	}
 }
