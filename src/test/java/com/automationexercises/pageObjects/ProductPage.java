@@ -3,7 +3,6 @@ package com.automationexercises.pageObjects;
 import java.time.Duration;
 import java.util.List;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +15,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.automationexercises.reusable.SearchFunctionality;
 
 public class ProductPage{
 	WebDriver ldriver;
+	WebDriverWait wait ;
 	public ProductPage(WebDriver rdriver){
 		ldriver=rdriver;
+		wait = new WebDriverWait(rdriver, Duration.ofSeconds(10));
+
 		PageFactory.initElements(rdriver, this);
 	}
 
@@ -117,6 +118,7 @@ public class ProductPage{
 	public void clickProduct() {
 		try {
 			productsNavBtn.click();
+				
 			List<WebElement> adSize = ldriver.findElements(By.cssSelector("iframe[src$='//automationexercise.com'][style*='display: inline']"));
 
 					if (adSize.size() >= 1) {
@@ -142,12 +144,14 @@ public class ProductPage{
 		Assert.assertTrue(actual.contains(expected), "Expected: " + actual + " to contain: " + expected);
 	}
 	
-	public void searchProduct() {
+	public void searchProduct() throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOf(searchInput));
 		searchInput.sendKeys("Blue Top");
 		searchBtn.click();
 	}
 	
-	public void verifySearchedProducts() {
+	public void verifySearchedProducts() throws InterruptedException {
+		
 		String expected="SEARCHED PRODUCTS";
 		String actual=verifyProductText.getText();
 		Assert.assertTrue(actual.contains(expected), "Expected: " + actual + " to contain: " + expected);
@@ -155,30 +159,31 @@ public class ProductPage{
 	
 	
 
-	public void viewProduct() {
-//		SearchFunctionality objSearch=new SearchFunctionality(ldriver);
+	public void addToCart() throws InterruptedException {
+		
 		JavascriptExecutor js = (JavascriptExecutor) ldriver;
 		js.executeScript("window.scrollBy(0,250)", "");
 		Actions action=new Actions(ldriver);
+		
 		action.moveToElement(addHover).build().perform();
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("add-to-cart")));
 		action.moveToElement(add);
 		action.click().build().perform();
-		
 	}
 	
-	public void handleCartModal() {
+	public void handleCartModal() throws InterruptedException {
+		
 		continueShopBtn.click();
 	}
 	
-	public void cart() {
+	public void cart() throws InterruptedException {
+	
 		viewCartLink.click();
 		proceedCheckoutBtn.click();
 		checkoutModal.click();
 		continueCart.click();
-	
 		
+	
 	}
 	
 	public void sign() {

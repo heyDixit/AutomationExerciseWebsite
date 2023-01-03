@@ -8,12 +8,42 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,343</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,626</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.automationexercises.testCases.TC_contactUsTest_001</td><td><a href="#m0">contactUsTest</a></td><td rowspan="1">1672415096771</td><td rowspan="1">8209</td></tr><tr class="passedeven"><td><a href="#m1">homePageTest</a></td><td rowspan="1">1672415084737</td><td rowspan="1">12032</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automationexercises.tests.ProductPageTest_002</td><td><a href="#m0">cartValidation</a></td><td rowspan="1">1672740726759</td><td rowspan="1">318</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.automationexercises.tests.ProductPageTest_002</td><td><a href="#m1">clickContactValidation</a></td><td rowspan="1">1672740706403</td><td rowspan="1">3430</td></tr><tr class="passedeven"><td><a href="#m2">clickProductValidation</a></td><td rowspan="1">1672740715760</td><td rowspan="1">7237</td></tr><tr class="passedeven"><td><a href="#m3">contactAlertValidation</a></td><td rowspan="1">1672740710051</td><td rowspan="1">151</td></tr><tr class="passedeven"><td><a href="#m4">fillContactUsForm</a></td><td rowspan="1">1672740709834</td><td rowspan="1">115</td></tr><tr class="passedeven"><td><a href="#m5">goBackHomeValidation</a></td><td rowspan="1">1672740710203</td><td rowspan="1">118</td></tr><tr class="passedeven"><td><a href="#m6">homePage</a></td><td rowspan="1">1672740710321</td><td rowspan="1">5438</td></tr><tr class="passedeven"><td><a href="#m7">homePageTest</a></td><td rowspan="1">1672740693760</td><td rowspan="1">12641</td></tr><tr class="passedeven"><td><a href="#m8">searchedProductsValidation</a></td><td rowspan="1">1672740722998</td><td rowspan="1">3761</td></tr><tr class="passedeven"><td><a href="#m9">submitContactUsForm</a></td><td rowspan="1">1672740709950</td><td rowspan="1">100</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.automationexercises.testCases.TC_contactUsTest_001#contactUsTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Contact Us Clicked<br/>Feedback Submit<br/>Verify Success Message<br/>Home on nav clicked<br/>Homepage Verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automationexercises.testCases.TC_contactUsTest_001#homePageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">com.automationexercises.tests.ProductPageTest_002#cartValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn btn-success close-modal btn-block&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LTIN-APLR1XFYF7604&apos;, ip: &apos;fe80:0:0:0:c57:f62a:407a:1791%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [19740ce5-b7e8-42dd-a792-31c072c73dc9, clickElement {id=5a43a6fe-323c-4f98-9875-a42e923edc55}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:52177, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 22.2.0, moz:processID: 6900, moz:profile: /var/folders/2b/v2dcyxc96xd..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:52177/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (19740ce5-b7e8-42dd-a792-31c072c73dc9)] -&gt; css selector: button.btn:nth-child(1)]
+Session ID: 19740ce5-b7e8-42dd-a792-31c072c73dc9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.automationexercises.pageObjects.ProductPage.handleCartModal(ProductPage.java:175)
+	at com.automationexercises.tests.ProductPageTest_002.cartValidation(ProductPageTest_002.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automationexercises.tests.ProductPageTest_002#clickContactValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Contact Us Clicked</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automationexercises.tests.ProductPageTest_002#clickProductValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automationexercises.tests.ProductPageTest_002#contactAlertValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Alert on contact us page accepted<br/>Verify Success Message</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automationexercises.tests.ProductPageTest_002#fillContactUsForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automationexercises.tests.ProductPageTest_002#goBackHomeValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Home on nav clicked<br/>Homepage Verified</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.automationexercises.tests.ProductPageTest_002#homePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.automationexercises.tests.ProductPageTest_002#homePageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.automationexercises.tests.ProductPageTest_002#searchedProductsValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.automationexercises.tests.ProductPageTest_002#submitContactUsForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Feedback Submit</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

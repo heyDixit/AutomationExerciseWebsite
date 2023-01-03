@@ -1,6 +1,7 @@
 package com.automationexercises.pageObjects;
 
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -65,7 +66,11 @@ public class ContactUs {
 	
 	public void clickContactUs() {
 		try {
+			
+//			JavascriptExecutor jse = (JavascriptExecutor)ldriver;
+//			jse.executeScript("arguments[0].click()", contactUs);
 			contactUs.click();
+			
 			Reporter.log("Contact Us Clicked");
 		}
 		catch(Exception e) {
@@ -100,7 +105,6 @@ public class ContactUs {
 	
 	
 	public void acceptAlert() {
-		
 		 Alert alert = ldriver.switchTo().alert();  //We need to switch from the website to the alert box
 	     alert.accept();
 	     Reporter.log("Alert on contact us page accepted");
